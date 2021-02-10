@@ -1,0 +1,7 @@
+#name-container {
+    box-sizing: border-box;
+    height: 150px;
+    flex-grow: 7;
+    align-items: flex-start;
+    border: 1px solid;
+}

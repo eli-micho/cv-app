@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './default.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//Components
+import NameCard from './components/NameCard';
+import ContactCard from './components/ContactCard';
+import EducationCard from './components/EducationCard';
+import WorkExpCard from './components/WorkExpCard';
+import SkillsCard from './components/SkillsCard';
+
+
+class App extends Component {
+  render(){
+    return(
+      <div className="app">
+        <NameCard />
+        <ContactCard />
+        <div className="break"></div>
+        <EducationCard />
+        <div className="break"></div>
+        <WorkExpCard />
+        <SkillsCard />
+      </div>
+    )
+  }
+};
 
 export default App;

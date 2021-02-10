@@ -1,0 +1,10 @@
+#contact-container {
+    padding: 0;
+    height: 150px;
+    border: 1px solid;
+    flex-grow: 3;
+}
+
+#contact-info-list {
+    
+}
